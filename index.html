@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宁河地震监测站简介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .station-info {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2e7d32;
+            border-left: 4px solid #2e7d32;
+            padding-left: 10px;
+        }
+        
+        .info-section {
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            margin-bottom: 10px;
+            display: flex;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            min-width: 100px;
+            color: #555;
+        }
+        
+        .info-value {
+            flex: 1;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.85rem;
+        }
+        
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f1f3f4;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+        
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        @media (max-width: 480px) {
+            .info-item {
+                flex-direction: column;
+            }
+            
+            .info-label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+            
+            table {
+                font-size: 0.75rem;
+            }
+            
+            th, td {
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>宁河地震监测站简介</h1>
+            <p class="subtitle">国家地震监测台站</p>
+        </header>
+        
+        <div class="station-info">
+            <div class="info-section">
+                <h2>基础信息</h2>
+                <div class="info-item">
+                    <span class="info-label">台站名称:</span>
+                    <span class="info-value">宁河地震监测站</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">台站代码:</span>
+                    <span class="info-value">12012</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">台站类别:</span>
+                    <span class="info-value">国家台</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">隶属:</span>
+                    <span class="info-value">天津市滨海地震监测中心站</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">地址:</span>
+                    <span class="info-value">天津市宁河区大北涧沽镇大北中学南侧</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">经纬度:</span>
+                    <span class="info-value">--°E, ---°N</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">建站时间:</span>
+                    <span class="info-value">1975年</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">占地面积:</span>
+                    <span class="info-value">10123m²</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">建筑面积:</span>
+                    <span class="info-value">385m²</span>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h2>观测手段</h2>
+                <p>宁河地震监测站拥有观测手段5种，观测仪器11套，测项22个(含辅助测项3个)。</p>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>测点编码</th>
+                                <th>测项分量代码</th>
+                                <th>仪器名称</th>
+                                <th>仪器型号</th>
+                                <th>安装时间</th>
+                                <th>所属学科</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>4112</td>
+                                <td>数字式水位仪</td>
+                                <td>SWY-2</td>
+                                <td>2016.12</td>
+                                <td>流体</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>4113</td>
+                                <td>数字式温度计</td>
+                                <td>SZW-2</td>
+                                <td>2016.12</td>
+                                <td>流体</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>9110 9130 9140</td>
+                                <td>气象三要素</td>
+                                <td>ZKGD3000-M</td>
+                                <td>2017.02</td>
+                                <td>辅助</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>4252</td>
+                                <td>二氧化碳测量仪</td>
+                                <td>RZW-1A</td>
+                                <td>2016.07</td>
+                                <td>流体</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>4232 9110 9130</td>
+                                <td>痕量氢在线自动分析仪</td>
+                                <td>ATG-6118H</td>
+                                <td>2016.09</td>
+                                <td>流体</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>3124 3125 3127</td>
+                                <td>质子矢量磁力仪</td>
+                                <td>FHD-2B</td>
+                                <td>2025.03</td>
+                                <td>地磁</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>7</td>
+                                <td>4252</td>
+                                <td>二氧化碳测量仪</td>
+                                <td>RZW-1A</td>
+                                <td>2024.08</td>
+                                <td>流体</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>A</td>
+                                <td>311A 311B 311C 311D</td>
+                                <td>质子旋进式磁力仪</td>
+                                <td>G856T</td>
+                                <td>2016.06</td>
+                                <td>地磁</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>QD001</td>
+                                <td>XXX</td>
+                                <td>加速度计</td>
+                                <td>JS-A2</td>
+                                <td>2021.07</td>
+                                <td>测震</td>
+                            </tr>
+                           <tr>
+                                <td>10</td>
+                                <td>XXX</td>
+                                <td>XXX</td>
+                                <td>GNNS接收机</td>
+                                <td>天宝</td>
+                                <td>2010</td>
+                                <td>形变</td>
+                            </tr><tr>
+                                <td>11</td>
+                                <td>XXX</td>
+                                <td>XXX</td>
+                                <td>GNNS接收机</td>
+                                <td>华测</td>
+                                <td>2024</td>
+                                <td>形变</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h2>历史沿革</h2>
+                <p>宁河地震监测站于1975年5月开始筹建，1976年基本建成，隶属于天津市地震局，海拔2.5m。距天津市直线距离约52km，东距渤海湾约25～30km，在地貌上处于滨海平原。
+                   所在地属半湿润大陆性季风气候，多年年均降水量620m。
+                   2021年9月滨海地震监测中心站成立，宁河地震监测站并入滨海中心站管理，2022年4月台站改为无人值守监测站。</p>
+            </div>
+            
+           
+        
+        <footer>
+            <p>数据来源：天津市地震局</p>
+            <p>更新时间：2026年3月23日</p>
+        </footer>
+    </div>
+</body>
+</html>
